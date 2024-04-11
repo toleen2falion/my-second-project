@@ -1,0 +1,929 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Font1:style1,style2&family=Font2:style1,style2');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 1px solid #fff;
+}
+
+.btn-secondary,
+.btn-third:hover {
+  background: #383848;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-third {
+  background: #e4b95b;
+}
+
+.primary-text {
+  color: #e4b95b;
+}
+
+/* Header Start الصورة الثانية في الاعلى*/
+header {
+  /* height: 100vh; */
+  height: 80vh;
+  background: url("./img/chef.jpg") center center/cover no-repeat;
+  position: relative;
+}
+.home{
+  background: url("./img/Welcome.jpg") center center/cover no-repeat;
+  height: 100vh;
+}
+.today_recipe{
+  background: url("./img/today_recipe.jpg") center center/cover no-repeat;
+  height: 80vh;
+}
+.dont_eat{
+  background: url("./img/dont_eat.jpg") center center/cover no-repeat;
+  height: 80vh;
+}
+
+.diseases{
+  background: url("./img/disease.jpg") center center/cover no-repeat;
+  height: 80vh;
+}
+
+.shopping_list{
+  background: url("./img/shopping_list.jpg") center center/cover no-repeat;
+  height: 88vh;
+}
+
+#h{
+    /* height: 100vh; */
+    height: 40vh;
+    padding-bottom: 60px;
+    /* background: url("./img/Welcome.jpg") center center/cover no-repeat; */
+    position: relative;
+}
+
+#hU{
+  /* height: 100vh; */
+  height: 70vh;
+  padding-bottom: 60px;
+  background: url("./img/hU.jpg") center center/cover no-repeat;
+  position: relative;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+#navbar img {
+  width: 100px;
+  margin-left: 100px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #e4b95b;
+}
+
+header .content , #h .content, #hU .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%; /* Add exmple of greeen background */
+}
+
+header::before, #h::before, #hU::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+header .content h1 , #h .content h1, #hU .content h1{
+  font-size: 40px;
+  color: #fff;
+}
+
+header .content p ,#h .content p,#hU .content p{
+  color: #fff;
+  margin: 20px 0 40px;
+}
+
+header * {
+  z-index: 10;
+}
+#h * {
+  z-index: 10;
+}
+
+#hU * {
+  z-index: 10;
+}
+
+/* Header End */
+
+/* About Start */
+#about {
+  height: 80vh;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .title,
+#offers .title,
+#menu .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#about h2,
+#offers h2,
+#menu h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+ font-family: 'Lobster', cursive;
+}
+h2 span {
+  color: #e4b95b; /* لون النص بين العلامات <span> */
+  font-family: mv boli;
+  text-decoration: underline;
+
+        
+}
+
+#about h2 {
+  color: #383848;
+  font-style: italic;
+ 
+}
+
+#about .title p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .about-content p {
+  margin-right: 7rem;
+  line-height: 1.6;
+  color: #3b3b3b;
+  /* font-weight: 700; */
+  font-size: larger;
+ 
+ 
+}
+
+#about img {
+  max-width: 450px;
+}
+
+#about .about-content a {
+  margin-top: 2rem;
+}
+/* About End */
+
+.dish_black{
+  width: 100%;
+  padding: 0px;
+  
+  background: url("./img/offer-background.jpg") center center/cover fixed;
+}
+#western{
+  padding-top: 30px;
+  width: 100%;
+}
+
+/* الأطباق الحديثة */
+#offers {
+  height: 95vh;
+  background: url("./img/ff.jpg") center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#offers1 {
+  height: 95vh;
+  background: url("./img/ffff.jpg") center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#offers h2 {
+  color: #e4b95b;
+}
+
+#offers .title p {
+  color: #fff;
+  font-weight: 500;
+}
+
+#offers .offers-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#offers .offers-items img {
+  width: 200px;
+}
+
+#offers .offers-items h3 {
+  font-size: 25px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+#offers .offers-items p {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+#offers .offers-items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* Offers الأطباق الحديثة end */
+
+
+
+
+
+/* Contact Section start */
+#contact {
+  background: #f4f2ed;
+  padding: 5rem 0;
+}
+
+#contact .container {
+  max-width: 900px;
+}
+
+#contact .contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact .contact-info {
+  width: 50%;
+}
+
+#contact .contact-info div {
+  margin: 30px 0;
+  line-height: 1.7;
+}
+
+#contact .contact-info h3 {
+  font-size: 28px;
+  color: #383848;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info p {
+  color: #9a9a9a;
+}
+
+#contact .contact-info p i {
+  color: #e4b95b;
+  margin-right: 5px;
+}
+
+#contact .contact-info a i {
+  color: #fff;
+  background: #383848;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+#contact .contact-info a i:hover {
+  background-color: #e4b95b;
+  color: #383848;
+}
+
+form {
+  width: 50%;
+}
+
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border: none;
+  background-color: #e3e2dd;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form button {
+  color: #fff;
+}
+
+/* Contact Section End */
+/* Footer Start */
+#footer {
+  background-color: #383848;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+/* Footer End */
+
+/* Responsiveness */
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+  #navbar img {
+    margin-left: 20px;
+  }
+
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  header .content h1 , #h .content h1{
+    font-size: 28px;
+  }
+
+  #about {
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  #about .about-content p {
+    margin-right: 2rem;
+  }
+
+  #about img {
+    width: 250px;
+  }
+
+  #offers .offers-items img {
+    width: 150px;
+  }
+
+  #offers .offers-items h3 {
+    font-size: 18px;
+  }
+
+  #menu .menu-items {
+    display: block;
+  }
+
+  #contact .contact-content {
+    flex-direction: column;
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+    }
+
+    #navbar img {
+      margin-bottom: 20px;
+    }
+
+    header .content h1 ,#h .content h1 {
+      font-size: 18px;
+    }
+
+    header .content p ,#h .content p {
+      font-size: 14px;
+    }
+
+    #about .about-content {
+      flex-direction: column;
+    }
+
+    #about .about-content a {
+      margin: 2rem 0;
+    }
+
+    #about img {
+      display: none;
+    }
+
+    #offers {
+      height: auto;
+      padding: 30px 10px;
+    }
+
+    #offers .offers-items {
+      flex-direction: column;
+    }
+
+    #menu .menu-items .menu-item {
+      margin: 20px 10px;
+    }
+
+    #daytime .daytime-items {
+      display: block;
+      height: auto;
+      padding: 30px 0;
+    }
+
+    #daytime .daytime-items .daytime-item {
+      margin-top: 20px;
+    }
+
+    #contact .contact-info,
+    form {
+      width: 80%;
+    }
+  }
+
+
+
+}
+
+
+/* أنماط الزر "الأطباق الحديثة " */
+.buy-now-btn {
+  background-color: #151615; /* لون الخلفية */
+  color: #fff; /* لون النص */
+  padding: 10px 20px; /* حجم  */
+  font-size: 16px; /* حجم الخط */
+  border: none; /* إزالة حدود الزر */
+  cursor: pointer; /* تغيير المؤشر عند التحويم */
+}
+
+.buy-now-btn:hover {
+  background-color: #45a049; /* لون الخلفية عند التحويم */
+}
+
+
+
+
+/*Review Doctor/chefs. */
+.review{
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+}
+
+.review h1{
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review h1 span{
+  margin-left: 15px;
+  color: #fac031;
+  font-family: mv boli;
+}
+
+.review h1 span::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  position: relative;
+  bottom: 15px;
+  display: block;
+}
+
+.review .review_box{
+  width: 95%;
+  margin: 70px auto;
+  display: flex;
+}
+
+.review .review_box .review_card{
+  width: 350px;
+  height: 535px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin: 0 8px;
+}
+
+.review .review_box .review_card .review_profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_profile{
+  transform: translateY(-60px);
+}
+
+.review .review_box .review_card .review_profile img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 5px solid #cccccc;
+}
+
+.review .review_box .review_card .review_text{
+  text-align: center;
+}
+
+.review .review_box .review_card .review_text .name{
+  color: #000;
+  transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .name{
+  transform: translateY(-50px);
+}
+
+.review .review_box .review_card .review_text .review_icon{
+  color: #fac031;
+  transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_icon{
+  transform: translateY(-30px);
+}
+
+.review .review_box .review_card .review_text .review_social i{
+  margin: 5px 1px;
+  font-size: 15px;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_social i{
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+.review .review_box .review_card .review_text p{
+  text-align: center;
+  line-height: 22px;
+  transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text p{
+  margin-top: 5px;
+}
+
+
+/*زر */
+.review_card {
+  position: relative;
+}
+
+.user_btn {
+  position: absolute;
+  bottom: 10px; /* تعديل المسافة من الأسفل   */
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #05111a;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.user_btn:hover {
+  background-color: #009249;
+}
+
+
+
+/*Categories
+التصنيفات*/
+
+.gallary{
+  width: 100%;
+  padding: 70px 0;
+}
+
+.gallary h1{
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallary h1 span{
+  margin-left: 15px;
+  color: #fac031;
+  font-family: mv boli;
+}
+
+.gallary h1 span::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.gallary .gallary_image_box{
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.gallary .gallary_image_box .gallary_image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.gallary .gallary_image_box .gallary_image img{
+  width: 100%;
+  transition: .3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover img{
+  opacity: 0.4;
+}
+
+.gallary .gallary_image_box .gallary_image h3{
+  position: absolute;
+  font-size: 35px;
+  margin-bottom: 130px;
+  color: #fac031;
+  font-family: polo;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover h3{
+  opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image p{
+  position: absolute;
+  width: 400px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  line-height: 22px;
+  opacity: 0;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover p{
+  opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn{
+  position: absolute;
+  margin-top: 180px;
+  color: #000;
+  background: #fac031;
+  padding: 7px 25px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(45px);
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+  opacity: 1;
+  transform: translateY(0);
+}
+a:hover{
+ 
+  color: rgb(228 185 91);
+
+}
+
+/* .v_d{
+ 
+  background-color: #009249;
+ 
+} */
+#tab1{
+border: none;
+box-shadow: none;
+  /* background-color: #009249; */
+}
+
+/* //howto_css_dropdown_navbar */
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+} */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:right;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* /////test show slide for comment */
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#Carousel {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2d9c9;
+}
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background:  #e4b95b;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:  #999389;
+}
+.cc {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+  width: 100%;
+  background: #e4b95b;
+  border-radius: 12px;
+  padding: 30px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.cc .slideCard {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+/* .slideCard .image {
+  height: 150px;
+  width: 150px;
+  padding: 4px;
+  background: #4070f4;
+  border-radius: 50%;
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+} */
+.slideCard h2 {
+  margin-top: 25px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+}
+.slideCard p {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+/* /////test show slide for comment ////end///*/

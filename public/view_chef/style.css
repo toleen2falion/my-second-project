@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+ 
+  color: rgb(211, 211, 211);
+  background: #efeef0;
+}
+main{
+  padding:  10px;
+}
+
+p{
+  margin: 10px 0px;
+  letter-spacing: 2px;
+}
+
+.flex-container-cards {
+  filter: drop-shadow(rgb(216, 176, 221) 0px 0px 1px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  /* padding: 0px 60px; */
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.flex-container-cards .card {
+  background:rgb(96 95 96);;
+  /* background: linear-gradient(240deg, rgb(120, 111, 134) 0%, rgba(36,36,36,1) 100%); */
+  width: 290px;
+  -webkit-clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, );
+          clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, );
+  transition: all 0.2s linear;
+  filter: drop-shadow(rgb(133, 122, 122) 0px 0px 10px);
+}
+.flex-container-cards .card:hover {
+  transform: scale(1.1);
+}
+.flex-container-cards .card .card-img-shadow {
+  filter: drop-shadow(rgb(161, 151, 151) 0px 0px 10px);
+}
+.flex-container-cards .card .card-img-shadow img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+}
+.flex-container-cards .card .card-content {
+  margin: 0px 30px;
+}
+.flex-container-cards .card h2 {
+  color: white;
+  /* color: rgb(228 185 91); */
+  text-align: center;
+}
+.flex-container-cards .card .button-shadow {
+  filter: drop-shadow(rgb(1, 6, 24) 0px 0px 5px);
+  transition: all 0.2s ease-in;
+}
+.flex-container-cards .card .button-shadow:hover {
+  filter: drop-shadow( rgb(228 185 91) 0px 0px 10px);
+}
+.flex-container-cards .card .button-shadow .card-button {
+  text-align: center;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  background: linear-gradient(45deg,  rgb(228 185 91) 0%,  rgb(228 185 91) 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+  color: black;
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+}
+.flex-container-cards .card .button-shadow .card-button:hover {
+  color: white;
+}
+.card{
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}
+p{
+  color: white;
+  /* color: rgb(228 185 91); */
+  text-align: center;
+}
+a:hover{
+ 
+  color: rgb(228 185 91);
+
+}
+h3{
+  text-align: center;
+  color: rgb(228 185 91);
+ font-size: 40px;
+}
+.card-button>a:hover{
+  color:black;
+}
+
+/* text الأطباق الغربية*/
+
+.flex-container-cards .card1 {
+ 
+  /* background: linear-gradient(240deg, rgb(120, 111, 134) 0%, rgba(36,36,36,1) 100%); */
+  width: 290px;
+  /* padding: 20px 10px; */
+  -webkit-clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, );
+          clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, );
+  transition: all 0.2s linear;
+  filter: drop-shadow(rgb(133, 122, 122) 0px 0px 10px);
+  
+}
+.flex-container-cards .card1:hover {
+  transform: scale(1.1);
+}
+.flex-container-cards .card1 .card-img-shadow {
+  filter: drop-shadow(rgb(161, 151, 151) 0px 0px 10px);
+}
+.flex-container-cards .card1 .card-img-shadow img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+}
+.flex-container-cards .card1 .card-content {
+  margin: 0px 30px;
+}
+.flex-container-cards .card1 h2 {
+  color: white;
+  /* color: rgb(228 185 91); */
+  text-align: center;
+}
+.flex-container-cards .card1 .button-shadow {
+  filter: drop-shadow(rgb(1, 6, 24) 0px 0px 5px);
+  transition: all 0.2s ease-in;
+}
+.flex-container-cards .card1 .button-shadow:hover {
+  filter: drop-shadow( rgb(228 185 91) 0px 0px 10px);
+}
+.flex-container-cards .card1 .button-shadow .card-button {
+  text-align: center;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  background: linear-gradient(45deg,  rgb(228 185 91) 0%,  rgb(228 185 91) 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+  color: black;
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+}
+.flex-container-cards .card1 .button-shadow .card-button:hover {
+  color: white;
+}
+.card1{
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}
+
+.search{
+  width: 20%;
+}
+/* .search>h3{
+ font-size: 40px;
+ color: wheat;
+ padding: 20px 0px;
+} */
+.search>input,.search>select{
+  padding: 0px 0px;
+  margin: 0px;
+  height: 37px;
+  border: 3px solid #f9a826;
+  background-color: #ffffff;
+ 
+  opacity: 0.6;
+}
+ 
+.search>div>input{
+ 
+ font-size: 20px;
+ padding: 0px;
+ background-color: transparent;
+ color: #efeef0;
+ 
+ 
+}
+.search>div{
+  width: 35%;
+  margin: 0px auto;
+  padding: 0px;
+  
+ }
+/* form{
+  height: 20vh;
+  background-color: antiquewhite;
+ 
+} */
+/* form>select{
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+} */
+.modal{
+height: 90vh;
+}
